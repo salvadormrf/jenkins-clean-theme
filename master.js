@@ -13,9 +13,17 @@ function updateExecutors() {
   $jq('#executors th.pane a.model-link').css('max-width',$jq("#side-panel").width() - 15);
 }
 
+function fixBuildIcon() {
+  $jq('#projectstatus td a[href*="build?"').click(function(e){
+    e.preventDefault();
+    $jq(this).find("img").click();
+  });
+}
+
 $jq(document).ready(function() {
   stickyFoot();
   updateExecutors();
+  fixBuildIcon();
 
   //hook into build executor update
   _refreshPart = window.refreshPart;

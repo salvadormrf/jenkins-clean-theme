@@ -531,11 +531,11 @@ td.healthReport[data="100"] a.build-health-link {
     padding-left: 24px;
     margin-left: 12px;
 }
-
+/*
 #projectstatus td a[href*="build?"] img {
     display: none!important;
 }
-
+*/
 td:first-child a[href=javadoc] {
     background: url(img/box.png) no-repeat!important;
     background-size: contain!important;
